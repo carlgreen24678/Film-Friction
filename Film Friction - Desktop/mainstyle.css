@@ -74,7 +74,7 @@ html, body {
 	border: none;
 	outline: none;
 	color: #fff;
-	padding: 14px 16px;
+	padding: 16px 16px;
 	font-family: PulpFictionItalic;
 	background-color: #0d0d0d;
 	margin: 0;
@@ -92,22 +92,39 @@ html, body {
 	position: absolute;
 	background-color: #0d0d0d;
 	min-width: 100px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: -4px 10px 16px 0px rgba(255,255,255,0.7);
 	z-index: 1;
+	right: 0;
+	left: auto;
+	margin-right: 7.5%;
+	margin-top: -5px;
 }
 .dropdown-content a {
 	float: none;
-	color: #0d0d0d;
+	color: #fff !important;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: left;
 }
-.dropdown-content a:hover {
-	color: red;
+.dropdown-content a:hover{
+	color: #f2ae30 !important;
 }
 .dropdown:hover .dropdown-content {
 	display: block;
+}
+
+/* Login form within dropdown menu */
+.login-field {
+	width: 90%;
+	height: 20px;
+	margin: 2.5%;
+}
+.login-text {
+	font-family: PulpFictionItalic;
+	font-size: 12pt;
+	color: #fff;
+	margin: 0 2.5%;
 }
 
 /* Searchbar div */
@@ -126,7 +143,7 @@ html, body {
 .searchbar {
 	width: 40%;
 	font-size: 14pt;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-family: sans-serif;
 	padding-left: 5px;
 }
 
@@ -467,6 +484,171 @@ html, body {
 	font-size: 14pt;
 	color: #fff;
 }
+
+/* Register page styling */
+.reg-conatiner {
+	width: 97.5%;
+	height: 92.5%;
+	background-color: rgba(100,93,76,0.5);
+}
+.reg-form {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: block;
+}
+.reg-field {
+	width: 85%;
+	height: 40px;
+	float: left;
+	font-size: 14pt;
+	font-family: sans-serif;
+}
+.reg-button {
+	width: 25%;
+	height: 50px;
+	background-color: #0d0d0d;
+	font-family: PulpFiction;
+	font-size: 16pt;
+	color: #fff;
+	margin-left: 25px; 
+	border-style: none;
+	border-radius: 10px;
+}
+.reg-button:hover {
+	background-color: #f2ae30;
+	cursor: pointer;
+} 
+/* Password strength checker */
+meter {
+	margin: 0 0 1em 25px;
+	width: 86%;
+	height: 1em;
+}
+meter::-webkit-meter-bar {
+	background: none;
+	background-color: rgba(0,0,0,0.1);
+}
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+#password-strength-text {
+	margin: 0 0 0 25px;
+}
+
+.reg-info {
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+}
+.reg-info-container {
+	width: 95%;
+	height: 65%;
+	background-color: #fff;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+.reg-info-title {
+	font-family: PulpFiction;
+	font-size: 16pt;
+	margin: 2.5%; 
+}
+.reg-info-text {
+	font-size: 14pt;
+	font-family: sans-serif;
+	margin: 2.5%;
+}
+ul.reg-list {
+	font-size: 14pt;
+	font-family: sans-serif;
+	list-style-type: square;
+}
+
+/* Contact page styling */
+.contact-container {
+	width: 97.5%;
+	height: 92.5%;
+	background-color: rgba(100,93,76,0.5);
+}
+.contact-form {
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+}
+.contact-field {
+	width: 60%;
+	height: 40px;
+	float: left;
+	margin: 25px 15%;
+	font-size: 14pt;
+	font-family: sans-serif;
+}
+.contact-button {
+	width: 25%;
+	height: 50px;
+	margin-left: 15%;
+	background-color: #0d0d0d;
+	font-family: PulpFiction;
+	font-size: 16pt;
+	color: #fff;
+	border-style: none;
+	border-radius: 10px;
+}
+.contact-button:hover {
+	background-color: #f2ae30;
+	cursor: pointer;
+}
+
+/* RSS Feeds page styling */
+.rss-main-container {
+	width: 97.5%;
+	height: 92.5%;
+	background-color: rgba(100,93,76,0.5);
+	margin: 25px 0;
+}
+.rss-container {
+	width: 20%;
+	height: auto;
+	margin: 0 2.5%; 
+	float: left;
+}
+.rss-title {
+	font-family: PulpFictionItalic;
+	font-size: 14pt;
+	color: #fff;
+	background-color: #0d0d0d;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rss-content {
+	width: 96%;
+	height: auto;
+	padding: 2%;
+	background-color: #fff;
+	color: #0d0d0d;
+	font-size: 12pt;
+	font-family: sans-serif;
+}
+
+/* Up and Coming page styling */
+.up-container {
+	width: 97.5%;
+	height: 92.5%;
+	background-color: rgba(100,93,76,0.5);
+}
+
 
 
 

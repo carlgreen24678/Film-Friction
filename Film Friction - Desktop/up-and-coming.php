@@ -12,7 +12,13 @@
 	</head>
 <body>
 	<?php include('header.php') ?>
-	<div class="page-title">Coming Soon</div>
+	<div class="page-title">Up and Coming</div>
+	<div class="main-container" style="display: flex;justify-content: center;align-items: center; height: 400px">
+		<div class="up-container">
+			
+		</div>
+	</div>
+	
 	
 	<?php include('footer.php') ?>
 </body>
